@@ -8,7 +8,7 @@
 }
 
 /* Adjusting navigation bar to the top */
-  
+
 .container_menu {
   position: fixed;
   top: 0;
@@ -17,14 +17,14 @@
   display: flex;
   flex-direction: row-reverse;
 }
-  
+
 .container--nav {
   width: 375px;
   height: 92px;
 }
-  
+
 /* Adjusting changes to navigation bar */
-  
+
 .navegation--list {
   list-style-type: none;
   padding: 0;
@@ -32,28 +32,28 @@
 }
 
 /* About the relevant information */
-  
+
 .main__containerinfo {
- padding-top: 100px;
+  padding-top: 100px;
 }
-  
+
 /* Adjusting mapping for icons */
-  
+
 .container__icons {
   width: 50%;
   display: flex;
   justify-content: space-evenly;
 }
-  
+
 /* Sizing the icons to be adjusted to lading page */
-  
+
 .brand--icon,
 .icon--image {
   height: 19px;
   width: 19px;
   border-radius: 0;
 }
-  
+
 /* Media queries for responsive design */
 
 /* Phone */
@@ -70,7 +70,7 @@
   .navegation--list {
     display: none;
   }
-  
+
   .container--nav {
     display: flex;
     justify-content: flex-end;
@@ -117,7 +117,7 @@
     text-align: center;
   }
 }
-  
+
 /* Desktop / Laptop */
 
 @media (min-width: 651px) {
@@ -174,7 +174,7 @@
     /* Color */
     color: #36b37e;
   }
-  
+
   #descriptionPortfolio {
     width: 920px;
     height: 96px;
@@ -186,7 +186,7 @@
     text-align: center;
     color: #172b4d;
   }
-  
+
   #titlePortfolio,
   #descriptionPortfolio {
     /* Color */
@@ -195,7 +195,7 @@
 }
 
 /* Transitions */
-  
+ 
 .brand--icon:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127);
 }
