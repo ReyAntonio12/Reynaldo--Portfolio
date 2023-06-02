@@ -75,7 +75,7 @@ you will be able to watch the main information and a brieaf description of how I
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- https://reyantonio12.github.io/My-Personal_Portfolio/
+No live demo so far, it will be available after this pull request is merge
 
 <!--This will be available once the pull request is merged-->
 
@@ -106,7 +106,7 @@ You can run test with the linters added to the project.
 
 ### Deployment
 
-You can see the project deployed at the above link
+No deployment so far, it will be ready after this pull request is reviewed
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
