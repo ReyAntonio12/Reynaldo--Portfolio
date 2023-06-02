@@ -1,0 +1,228 @@
+/* Adjusting every box to the hole body of the page */
+
+.main__container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Adjusting navigation bar to the top */
+
+.container_menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.container--nav {
+  width: 375px;
+  height: 92px;
+}
+
+/* Adjusting changes to navigation bar */
+
+.navegation--list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Main section container */
+
+.information__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* About the relevant information */
+
+.main__containerinfo {
+  padding-top: 100px;
+}
+
+/* Adjusting mapping for icons */
+
+.container__icons {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+}
+
+/* Sizing the icons to be adjusted to lading page */
+
+.brand--icon,
+.icon--image {
+  height: 19px;
+  width: 19px;
+  border-radius: 0;
+  list-style: none;
+}
+
+/* Media queries for responsive design */
+
+/* Phone */
+
+@media (max-width: 650px) {
+  .main__containerinfo {
+    padding-top: 100px;
+    background-image: url('images/mobile_background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /* Navigation buton */
+
+  .container_menu {
+    padding: 24px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .navegation--list {
+    display: none;
+  }
+
+  .container--nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .menu--image {
+    width: 78%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  #menu--button {
+    width: 18px;
+    height: 12px;
+  }
+
+  /* Main information */
+
+  #titlePortfolio,
+  #developerPortfolio {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700px;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    margin: 0;
+  }
+
+  #titlePortfolio,
+  #descriptionPortfolio {
+    /* Color */
+    color: #172b4d;
+  }
+
+  #developerPortfolio {
+    /* Color */
+    color: #36b37e;
+  }
+
+  #descriptionPortfolio {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+  }
+}
+
+/* Desktop / Laptop */
+
+@media (min-width: 651px) {
+  body {
+    background-image: url('images/desktop_background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /* Navigation */
+
+  .container--nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .navegation--list {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .navigation--option {
+    font-family: 'Inter', sans-serif;
+    color: #172b4d;
+  }
+
+  .menu--image {
+    display: none;
+  }
+
+  /* Main text */
+
+  #titlePortfolio,
+  #developerPortfolio {
+    width: 920px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 800px;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.37px;
+  }
+
+  #titlePortfolio {
+    /* Color */
+    color: #172b4d;
+  }
+
+  #developerPortfolio {
+    /* Color */
+    color: #36b37e;
+  }
+
+  #descriptionPortfolio {
+    width: 920px;
+    height: 96px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #172b4d;
+  }
+
+  #titlePortfolio,
+  #descriptionPortfolio {
+    /* Color */
+    color: #172b4d;
+  }
+}
+
+/* Transitions */
+
+.brand--icon:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127);
+}
