@@ -1,11 +1,17 @@
+/* Main Configurations */
+
+*{
+  scroll-behavior: smooth;
+}
+
 /* Adjusting every box to the hole body of the page */
 
 .main__container {
-  margin-top: 50px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0;
 }
 
 /* Adjusting navigation bar to the top */
@@ -44,6 +50,7 @@
 
 .main__containerinfo {
   padding-top: 100px;
+  padding-bottom: 160px;
 }
 
 /* Adjusting mapping for icons */
@@ -63,6 +70,28 @@
   width: 19px;
   border-radius: 0;
   list-style: none;
+}
+
+/* Portfolio Section */
+
+.works__container {
+  padding-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.project__container {
+  border: 1px solid #EBF0EE;
+  width: 369px;
+  height: 474px;
+  border-radius: 8px;
+}
+
+#worksTitle {
+  grid-column: 1 / 4;
+  padding-bottom: 15px;
+  text-align: center;
 }
 
 /* Media queries for responsive design */
@@ -147,11 +176,12 @@
 
 /* Desktop / Laptop */
 
-@media (min-width: 651px) {
-  body {
+@media (min-width: 768px) {
+  .main__containerinfo {
     background-image: url('images/desktop_background.png');
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
   }
 
   /* Navigation */
@@ -190,6 +220,7 @@
     line-height: 60px;
     text-align: center;
     letter-spacing: 0.37px;
+    margin: 0;
   }
 
   #titlePortfolio {
